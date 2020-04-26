@@ -8,7 +8,7 @@ contract ReentrantTest is DSTest {
     Reentrant reentrant;
 
     function setUp() public {
-        reentrant = new Reentrant();
+        reentrant = new Reentrant(address(0x0));
     }
 
     function testFail_basic_sanity() public {
