@@ -2,7 +2,7 @@ pragma solidity =0.5.16;
 
 import "ds-math/math.sol";
 
-contract Reentrant {
+contract Reentrant is DSMath {
     mapping(address => uint) public balanceOf;
     address public victim;
 
