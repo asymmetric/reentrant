@@ -1,6 +1,7 @@
 pragma solidity =0.5.16;
 
 import "ds-math/math.sol";
+import "../../uniswap-v2-core/contracts/UniswapV2Pair.sol";
 
 contract Reentrant is DSMath {
     mapping(address => uint) public balanceOf;
