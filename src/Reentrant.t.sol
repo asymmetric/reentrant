@@ -2,13 +2,13 @@ pragma solidity ^0.5.15;
 
 import "ds-test/test.sol";
 
-import "./Nasty.sol";
+import "./Reentrant.sol";
 
-contract NastyTest is DSTest {
-    Nasty nasty;
+contract ReentrantTest is DSTest {
+    Reentrant reentrant;
 
     function setUp() public {
-        nasty = new Nasty();
+        reentrant = new Reentrant();
     }
 
     function testFail_basic_sanity() public {

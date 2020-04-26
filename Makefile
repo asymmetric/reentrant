@@ -1,4 +1,4 @@
 all    :; dapp build
 clean  :; dapp clean
 test   :; dapp test
-deploy :; dapp create Nasty
+deploy :; dapp create Reentrant

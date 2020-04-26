@@ -2,7 +2,7 @@ pragma solidity ^0.5.15;
 
 import "ds-math/math.sol";
 
-contract Nasty {
+contract Reentrant {
     mapping(address => uint) public balanceOf;
     address public victim;
 
